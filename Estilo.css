@@ -1,0 +1,77 @@
+
+form {
+    /*Centralizando o formulário na página*/
+    margin: 0 auto;
+    width: 298px;
+    /*Inserindo uma borda de contorno no formulário*/
+    padding: 1em;
+    border: 1px solid rgb(250, 128, 114);
+    border-radius: 2em;
+    /* text-align: center; */
+    /*Tipo de fonte primária*/
+    font: 1em times;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    background-color: #f1dda5;
+    font-family: "Times New Roman";
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: #dddddd;
+    position: none;
+    top: 0;
+    width: 100%;
+
+}
+
+label {
+    /*Tamanho e alinhamento dos formulários*/
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+}
+
+h1 {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+input {
+    /*Definindo o tamanho dos campos de entrada de texto*/
+    width: 134px;
+}
+
+input:focus, 
+textarea:focus {
+    /*Adiciona destaque para o elemento quando ele recebe o foco*/
+    border-color: rgb(221, 15, 15);
+}
+
+button {
+    margin: auto;
+    width: 250px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    outline: none;
+    background-color: #7fffd4;
+    color: #8b0000;
+    font-size: 25px;
+    box-shadow: 0px 10px #808080;
+}
+
+button:hover{
+    background-color: hwb(159 30% 35%);
+    cursor: pointer;
+}
+
+button:active{
+    background-color: #7fffd4;
+    box-shadow: 0px 5px hsl(0, 0%, 41%);
+    transform: translateY(4px);
+}

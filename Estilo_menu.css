@@ -73,9 +73,48 @@ body{
     display: block;
 }
 
-/*article {
-    padding: 16px;
-    margin-top: 60px;
-    height: 1500px;
-}
+/*Ajustando o conteúdo da página para exibição em smartphones*/
 
+@media screen and (max-width:480px) {
+    body {
+        max-width: 480px;
+        font-size: 1.0em;
+    }
+
+    #menu-principal {
+        width: auto;
+        height: auto;
+        background-color: hwb(56 15% 10%);
+    }
+
+    #menu-principal li {
+        background-color: rgb(180, 235, 52);
+        text-decoration: none;
+        width: 100%;
+        float: none;
+    }
+
+    #menu-principal li a {
+        color: #373264;
+        text-align: left;
+        display: block;
+        outline: none;
+    }
+
+    #menu-principal li:hover,
+    #menu-principal li:focus-within,
+    #menu-principal li a:hover {
+        cursor: pointer;
+        font-weight: bold;
+        color: #520635;
+        transition: 0.3s;
+        left: 10px;
+    }
+
+    .dropdown {
+        position: static;
+        left: 0px;
+        background-color: hsl(160, 51%, 29%);
+        list-style: none;
+    }
+}

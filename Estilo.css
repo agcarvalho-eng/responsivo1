@@ -1,15 +1,15 @@
 
 form {
     /*Centralizando o formulário na página*/
-    margin: 0 auto;
+    margin: auto;
     width: 298px;
     /*Inserindo uma borda de contorno no formulário*/
     padding: 1em;
     border: 1px solid rgb(250, 128, 114);
     border-radius: 2em;
-    /* text-align: center; */
+
     /*Tipo de fonte primária*/
-    font: 1em times;
+    font: 1.0em times;
     font-size: 14px;
     color: rgb(0, 0, 0);
     background-color: #f1dda5;
@@ -18,8 +18,8 @@ form {
 
 ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 1px;
+    margin: 1px;
     overflow: hidden;
     background-color: #dddddd;
     position: none;
@@ -43,13 +43,17 @@ h1 {
 
 input {
     /*Definindo o tamanho dos campos de entrada de texto*/
-    width: 134px;
+    width: 130px;
+    padding: 1px;
+    margin: 1px;
 }
 
 input:focus, 
 textarea:focus {
     /*Adiciona destaque para o elemento quando ele recebe o foco*/
     border-color: rgb(221, 15, 15);
+    padding: 1px;
+    margin: 1px;
 }
 
 button {
@@ -74,4 +78,40 @@ button:active{
     background-color: #7fffd4;
     box-shadow: 0px 5px hsl(0, 0%, 41%);
     transform: translateY(4px);
+}
+
+/*Ajustando o conteúdo da página para exibição em smartphones*/
+
+@media screen and (max-width:480px) {
+    body {
+        max-width: 480px;
+        font-size: 1.0em;
+    }
+
+    form {
+        background-color: #bdb76b;
+        width: 240px;
+    }
+
+    h1 {
+        font-size: 20px;
+        color: #552c2c;
+        text-align: center;
+    }
+
+    ul {
+        background-color: hsl(78, 31%, 84%);
+    }
+
+    label {
+        /*Tamanho e alinhamento dos formulários*/
+        display: inline-block;
+        width: 150px;
+        text-align: left;
+    }
+
+    button {
+        width: 230px;
+    }
+
 }

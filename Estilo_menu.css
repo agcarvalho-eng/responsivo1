@@ -11,6 +11,8 @@ body{
     font-family: monospace;
     float: left;
     width: 100%;
+    display: block;
+    overflow: auto;
 }
 
 #menu-principal {
